@@ -45,9 +45,6 @@ A simple in-memory cache server written in PHP that supports `SET`, `GET`, `DEL`
    <?php
     $client = new \Casper\CacheClient();
     
-    // Set a value
-    $client->sendCommand('SET', 'key1', 'value1', 3600);
-    
     // Get a value
     $value = $client->get('key1');
     echo $value; // Output: value1
